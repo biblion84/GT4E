@@ -8,6 +8,6 @@ function GT4Elog($log, $file = "logs.log") //créé un fichier logs dans le doss
 
 function GT4Esitemap()
 {
-    
+
 }
 ?>
