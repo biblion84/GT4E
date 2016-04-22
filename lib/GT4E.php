@@ -18,11 +18,11 @@ function generateCallTrace() // From jurchiks101 at gmail dot com = Return somet
     array_pop($trace); // remove call to this method
     $length = count($trace);
     $result = array();
-    for ($i = 0; $i < $length-1; $i++)
+    for ($i = 0; $i < $length; $i++)
     {
         $result[] = ($i + 1)  . ')' . substr($trace[$i], strpos($trace[$i], ' ')); // replace '#someNum' with '$i)', set the right ordering
     }
-    return "\t" . implode("\n\t", $result);
+    return "\n\t" . implode("\n\t", $result);
 }
 
 function GT4Esitemap()
